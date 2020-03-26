@@ -82,7 +82,7 @@ const excluir = async (req, res) => {
       .delete();
 
     // HTTP 204 No Content
-    return res.staus(204).json();
+    return res.status(204).json();
 
     //
   } catch (err) {
