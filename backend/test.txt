@@ -1,0 +1,38 @@
+{
+	"name":"APAE",
+	"email":"apaeriodosul@yahoo.com.br",
+	"whatsapp":"6735213468",
+	"city":"rio do sul",
+	"uf":"sc"
+}
+
+{
+	"name":"APAD",
+	"email":"contato@apad.com.br",
+	"whatsapp":"770000888",
+	"city":"rio do sul",
+	"uf":"sc"
+}
+
+{
+	"title":"Cachorro atropelado",
+	"description":"Encontrado um cachorro de porte médio com a perna quebrada. Necessita de uma operação.",
+	"value":120
+}
+
+{
+	"title":"Cachorro abandonado",
+	"description":"cachorro de porte pequeno, cheio de verme, encontrado abandonado. Necessita de uma limpeza.",
+	"value":40
+}
+
+const ong = await connection('ongs')
+    .where('id', id)
+    .select('name')
+    .first();
+
+  if (!ong) {
+    return res.status(404).json({ error: 'ONG not found' });
+  }
+
+  
